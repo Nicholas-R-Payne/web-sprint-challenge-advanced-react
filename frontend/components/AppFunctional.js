@@ -1,13 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
+
+const initialState = {
+  x: 2,
+  y: 2,
+  steps: 0,
+  email: ''
+}
 
 export default function AppFunctional(props) {
+
+  const [grid, setGrid] = useState(initialState)
 
   const moveActive = (evt) => {
 
   }
 
   const resetGrid = () => {
-    
+
   }
 
   return (
