@@ -56,6 +56,13 @@ export default class AppClass extends React.Component {
     }
   }
 
+  componentDidUpdate(prevProps, prevState){
+    if(prevState.x !== this.state.x ||
+       prevState.y !== this.state.y){
+         this.setActive(this.state.x, this.state.y);
+       }
+  }
+
   moveActive = (evt) => {
     switch(evt.target.textContent) {
       case 'UP':
