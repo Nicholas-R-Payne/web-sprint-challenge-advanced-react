@@ -1,7 +1,12 @@
 import React from 'react'
-import axios from 'axios'
 
 export default class AppClass extends React.Component {
+  moveLeft = activeSquare => {
+    this.setState({
+      
+    })
+  }
+
   render() {
     const { className } = this.props
     return (
@@ -25,7 +30,7 @@ export default class AppClass extends React.Component {
           <h3 id="message"></h3>
         </div>
         <div id="keypad">
-          <button id="left">LEFT</button>
+          <button id="left" onClick={() => this.moveLeft('.square_active')}>LEFT</button>
           <button id="up">UP</button>
           <button id="right">RIGHT</button>
           <button id="down">DOWN</button>
