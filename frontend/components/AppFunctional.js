@@ -1,6 +1,29 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 export default function AppFunctional(props) {
+
+  const [activeSquare, setActiveSquare] = useState([])
+
+  const moveLeft = () => {
+
+  }
+
+  const moveUp = () => {
+
+  }
+
+  const moveRight = () => {
+
+  }
+
+  const moveDown = () => {
+
+  }
+
+  const resetGrid = () => {
+    
+  }
+
   return (
     <div id="wrapper" className={props.className}>
       <div className="info">
@@ -22,11 +45,11 @@ export default function AppFunctional(props) {
         <h3 id="message"></h3>
       </div>
       <div id="keypad">
-        <button id="left">LEFT</button>
-        <button id="up">UP</button>
-        <button id="right">RIGHT</button>
-        <button id="down">DOWN</button>
-        <button id="reset">reset</button>
+        <button id="left" onClick={moveLeft}>LEFT</button>
+        <button id="up" onClick={moveUp}>UP</button>
+        <button id="right" onClick={moveRight}>RIGHT</button>
+        <button id="down" onClick={moveDown}>DOWN</button>
+        <button id="reset" onClick={resetGrid}>reset</button>
       </div>
       <form>
         <input id="email" type="email" placeholder="type email"></input>
