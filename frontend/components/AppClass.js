@@ -1,10 +1,6 @@
 import React from 'react'
 
 export default class AppClass extends React.Component {
-  // state = {
-  //   grid: [],
-  //   coords: [],
-  // }
 
   render() {
     const { className } = this.props
